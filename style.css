@@ -78,12 +78,7 @@ section {
   .contact-form {
     display: flex;
   }
-  
-  .uil {
-    height: 50px;
-    width: 50px;
-  }
-  
+
   .input-fields {
     display: flex;
     flex-direction: column;
@@ -94,3 +89,17 @@ section {
   .msg {
     width: 60%;
   }
+  .input-fields .input,
+.msg textarea {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #5f66618f;
+  padding: 10px;
+  color: black;
+  width: 100%;
+}
+
+.msg textarea {
+  height: 189px;
+}
