@@ -160,15 +160,6 @@ i {
   cursor: pointer;
   color: black;
 }
-
-.header.icons a:hover,
-.header.icons div:hover {
-  color: green;
-}
-.header #menu-btn {
-  display: none;
-}
-
 .search-form {
   position: fixed;
   top: 0;
@@ -196,5 +187,34 @@ i {
   font-size: 5rem;
 }
 #close-search:hover {
+  color: green;
+}
+form {
+  width: 90vw;
+  margin: 0 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.2rem solid white;
+  display: flex;
+  align-items: center;
+}
+form input {
+  width: 100%;
+  font-size: 2rem;
+  color: white;
+  text-transform: none;
+  background: none;
+  padding-right: 2rem;
+}
+
+form input::placeholder {
+  color: #aaa;
+}
+
+form label {
+  font-size: 3rem;
+  cursor: pointer;
+  color: white;
+}
+form label:hover {
   color: green;
 }
