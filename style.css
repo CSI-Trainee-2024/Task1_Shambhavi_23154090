@@ -103,3 +103,38 @@ section {
 .msg textarea {
   height: 189px;
 }
+.msg .btn1 {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid green;
+  color: black;
+  cursor: pointer;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+  border-radius: 40px;
+  background: none;
+}
+.btn1 button[type="submit"] {
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+i {
+  color: green;
+}
+
+.header .navbar a {
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  color: black;
+}
+.header .navbar a:hover {
+  color: green;
+}
+.header .navbar #nav-close {
+  font-size: 5rem;
+  cursor: pointer;
+  color: black;
+  display: none;
+}
