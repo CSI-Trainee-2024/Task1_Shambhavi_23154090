@@ -75,3 +75,22 @@ section {
     margin-bottom: 25px;
     font-size: 3.5rem;
   }
+  .contact-form {
+    display: flex;
+  }
+  
+  .uil {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .input-fields {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+  
+  .input-fields,
+  .msg {
+    width: 60%;
+  }
