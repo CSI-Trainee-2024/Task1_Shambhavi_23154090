@@ -218,6 +218,57 @@ form label {
 form label:hover {
   color: green;
 }
+.heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+  color: #10221b;
+}
+.category .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(29rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 1.5rem;
+}
+
+.category .box-container .box {
+  text-align: center;
+  padding: 1rem;
+}
+.category .box-container .box img {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 1px 2px 6px 3px grey;
+}
+.category .box-container .box h3 {
+  font-size: 2rem;
+  background: linear-gradient(to right, #2545fc,
+  #0de3eb, #100a2e, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.category .box-container .box p {
+  font-size: 1.5rem;
+  color: #10221b;
+  padding: 1rem 0;
+  line-height: 2;
+}
+.packages {
+  background: #eee;
+}
+
+.packages .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(32rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+
 .packages .box-container .box {
   text-align: center;
   background: #fff;
@@ -279,4 +330,103 @@ form label:hover {
 .packages .box-container .box .content .price {
   font-size: 2rem;
   color: #219150;
+}
+
+.footer {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url(../images/footer-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/footer.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  color: #fff;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+  color: #219150;
+  padding-right: 0.5rem;
+}
+
+.footer .box-container .box a:hover {
+  color: #219150;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.header .navbar {
+  position: fixed;
+  top: 0;
+  left: -110%;
+  background: white;
+  z-index: 10000;
+  width: 35rem;
+  height: 100%;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.header .navbar.active {
+  left: 0;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+}
+.header .navbar a {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+.header .navbar #nav-close {
+  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+.contact-form {
+  flex-direction: column;
+}
+.msg textarea {
+  height: 80px;
+}
+.input-fields,
+.msg {
+  width: 100%;
+}
+.input, textarea {
+  width: 60vw !important;
+}
+.msg {
+  margin-left: -20px;
+}
+form {
+  flex-direction: column;
+  width: 70vw;
 }
